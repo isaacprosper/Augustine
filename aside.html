@@ -1,0 +1,251 @@
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+      <link rel="icon" href="/favicon.ico">
+      <title>Payment</title>
+      <script type="text/javascript" async="" src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/cryptico/0.0.1343522940/cryptico.min.js" integrity="sha512-C7GGRhFRn7F7hsLH1oCH2kX9ls61kx33wAgTZ6xJDwGvvgULcIZpwKqxG1+Kj/KOD2jWPxjNQYHi4BopPJPxVA==" crossorigin="anonymous" async="" defer=""></script>
+      <link rel="preload" href="js/checkout.js" as="script">
+      <link href="css/app.dc2914b2.css" rel="preload" as="style">
+      <link href="js/app.bfa3a126.js" rel="preload" as="script">
+      <link href="js/chunk-vendors.9f39fc44.js" rel="preload" as="script">
+      <link href="css/app.dc2914b2.css" rel="stylesheet">
+   </head>
+   <body>
+<aside role="complementary" class="nav container__col-sm-12 container__col-md-4" data-v-37afe4f3="">
+    <div class="nav__homepage hidden" data-v-37afe4f3="">
+       <article class="homepage hidden" data-v-29cf9ae0="" data-v-37afe4f3="">
+          <button type="button" class="homepage__close" data-v-29cf9ae0="">Cancel payment</button>
+          <section class="header container--row container__col-md-12" data-v-5cc8ff6a="" data-v-29cf9ae0="">
+             <div class="header__details" data-v-5cc8ff6a="">
+                <div class="merchant__details" data-v-5cc8ff6a="">
+                   <img class="merchant__details-logo" src="https://checkout.flutterwave.com/assetsimg/rave-logo.png" alt="Flutterwave Developers" data-v-5cc8ff6a="">
+                   <p class="merchant__details-name" data-v-5cc8ff6a="">Flutterwave Developers</p>
+                </div>
+                <div class="customer__details" data-v-5cc8ff6a="">
+                   <div class="customer__details-money" data-v-5cc8ff6a="">
+                      <span data-v-5cc8ff6a="">ZAR</span>
+                      <p data-v-5cc8ff6a="">****</p>
+                   </div>
+                   <p class="customer__details-email" data-v-5cc8ff6a="">Investment</p>
+                </div>
+             </div>
+             <div class="dcc__info" data-v-5cc8ff6a="">
+                <!---->
+             </div>
+          </section>
+          <h2 class="homepage__title" data-v-29cf9ae0="">How would you like to pay?</h2>
+       </article>
+       <span aria-hidden="true" class="nav__header" id="payment-options-heading" data-v-37afe4f3="">Payment Options</span>
+       <nav class="payment__nav payment__nav-half hidden container__col-sm-12 container__col-md-4" role="navigation" data-v-37afe4f3="">
+          <li data-focusable="true" role="option" class="nav__item hidden container__col-sm-12 container__col-md-4" aria-selected="false" aria-label="Card Payment" data-v-4fd5c7df="">
+             <button type="button" aria-hidden="true" tabindex="-1" data-v-4fd5c7df="">
+                <img class="nav__item-icon" src="img/card.e59de91a.svg" alt="" role="presentation" data-v-4fd5c7df="">
+                <p class="nav__item-text" data-v-4fd5c7df="">
+                   Card <!---->
+                </p>
+             </button>
+          </li>
+          <li data-focusable="true" role="option" class="nav__item hidden container__col-sm-12 container__col-md-4" aria-selected="false" aria-label="Google Pay Payment" data-v-4fd5c7df="">
+             <button type="button" aria-hidden="true" tabindex="-1" data-v-4fd5c7df="">
+                <img class="nav__item-icon" src="img/googlepay.3902c822.svg" alt="" role="presentation" data-v-4fd5c7df="">
+                <p class="nav__item-text" data-v-4fd5c7df="">
+                   Google Pay <!---->
+                </p>
+             </button>
+          </li>
+          <li data-focusable="true" role="option" class="nav__item hidden container__col-sm-12 container__col-md-4" aria-selected="false" aria-label="USSD Payment" data-v-4fd5c7df="">
+             <button type="button" aria-hidden="true" tabindex="-1" data-v-4fd5c7df="">
+                <img class="nav__item-icon" src="img/ussd.c7ac8189.svg" alt="" role="presentation" data-v-4fd5c7df="">
+                <p class="nav__item-text" data-v-4fd5c7df="">
+                   USSD <!---->
+                </p>
+             </button>
+          </li>
+          <li data-focusable="true" role="option" class="nav__item hidden container__col-sm-12 container__col-md-4" aria-selected="false" aria-label="Bank Payment" data-v-4fd5c7df="">
+             <button type="button" aria-hidden="true" tabindex="-1" data-v-4fd5c7df="">
+                <img class="nav__item-icon" src="img/account.b75bc769.svg" alt="" role="presentation" data-v-4fd5c7df="">
+                <p class="nav__item-text" data-v-4fd5c7df="">
+                   Bank <!---->
+                </p>
+             </button>
+          </li>
+          <li data-focusable="true" role="option" class="nav__item nav__item-active hidden container__col-sm-12 container__col-md-4" aria-selected="true" aria-label="Bank Transfer Payment" data-v-4fd5c7df="">
+             <button type="button" aria-hidden="true" tabindex="0" data-v-4fd5c7df="">
+                <img class="nav__item-icon" src="img/banktransfer-light.2aca44df.svg" alt="" role="presentation" data-v-4fd5c7df="">
+                <p class="nav__item-text" data-v-4fd5c7df="">
+                   Bank Transfer <!---->
+                </p>
+             </button>
+          </li>
+          <button type="button" class="payment__nav-more">
+             <span class="">See all payments options</span>
+             <svg width="10" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 14.632L1.375 16l7.643-7.65L1.368.7 0 2.068 6.282 8.35 0 14.632z" fill="#FF9B00"></path>
+             </svg>
+          </button>
+       </nav>
+       <nav class="payment__nav payment__nav-full container__col-sm-12 container__col-md-4 hidden" role="navigation" data-v-37afe4f3="">
+          <div class="payment__nav-header">
+             <div class="wrapper">
+                <button type="button" class="nav-min">
+                   <svg width="11" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.592 8.5l6.695-6.694a.538.538 0 000-.783L9.435.17A.539.539 0 009.043 0a.539.539 0 00-.391.17L.713 8.108a.538.538 0 000 .784l7.938 7.938a.538.538 0 00.784 0l.852-.852a.539.539 0 000-.783L3.591 8.5z" fill="#000"></path>
+                   </svg>
+                </button>
+                <p>Payment Methods</p>
+             </div>
+             <button type="button" class="close"><span>Close</span></button>
+          </div>
+          <li data-focusable="true" role="option" class="nav__item container__col-sm-12 container__col-md-4 hidden" aria-selected="false" aria-label="Card Payment" data-v-4fd5c7df="">
+             <button type="button" aria-hidden="true" tabindex="-1" data-v-4fd5c7df="">
+                <img class="nav__item-icon" src="img/card.e59de91a.svg" alt="" role="presentation" data-v-4fd5c7df="">
+                <p class="nav__item-text" data-v-4fd5c7df="">
+                   Card <!---->
+                </p>
+             </button>
+          </li>
+          <li data-focusable="true" role="option" class="nav__item container__col-sm-12 container__col-md-4 hidden" aria-selected="false" aria-label="Google Pay Payment" data-v-4fd5c7df="">
+             <button type="button" aria-hidden="true" tabindex="-1" data-v-4fd5c7df="">
+                <img class="nav__item-icon" src="img/googlepay.3902c822.svg" alt="" role="presentation" data-v-4fd5c7df="">
+                <p class="nav__item-text" data-v-4fd5c7df="">
+                   Google Pay <!---->
+                </p>
+             </button>
+          </li>
+          <li data-focusable="true" role="option" class="nav__item container__col-sm-12 container__col-md-4 hidden" aria-selected="false" aria-label="USSD Payment" data-v-4fd5c7df="">
+             <button type="button" aria-hidden="true" tabindex="-1" data-v-4fd5c7df="">
+                <img class="nav__item-icon" src="img/ussd.c7ac8189.svg" alt="" role="presentation" data-v-4fd5c7df="">
+                <p class="nav__item-text" data-v-4fd5c7df="">
+                   USSD <!---->
+                </p>
+             </button>
+          </li>
+          <li data-focusable="true" role="option" class="nav__item container__col-sm-12 container__col-md-4 hidden" aria-selected="false" aria-label="Bank Payment" data-v-4fd5c7df="">
+             <button type="button" aria-hidden="true" tabindex="-1" data-v-4fd5c7df="">
+                <img class="nav__item-icon" src="img/account.b75bc769.svg" alt="" role="presentation" data-v-4fd5c7df="">
+                <p class="nav__item-text" data-v-4fd5c7df="">
+                   Bank <!---->
+                </p>
+             </button>
+          </li>
+          <li data-focusable="true" role="option" class="nav__item nav__item-active container__col-sm-12 container__col-md-4 hidden" aria-selected="true" aria-label="Bank Transfer Payment" data-v-4fd5c7df="">
+             <button type="button" aria-hidden="true" tabindex="0" data-v-4fd5c7df="">
+                <img class="nav__item-icon" src="img/banktransfer-light.2aca44df.svg" alt="" role="presentation" data-v-4fd5c7df="">
+                <p class="nav__item-text" data-v-4fd5c7df="">
+                   Bank Transfer <!---->
+                </p>
+             </button>
+          </li>
+          <li data-focusable="true" role="option" class="nav__item container__col-sm-12 container__col-md-4 hidden" aria-selected="false" aria-label="eNaira Payment" data-v-4fd5c7df="">
+             <button type="button" aria-hidden="true" tabindex="-1" data-v-4fd5c7df="">
+                <img class="nav__item-icon" src="img/enaira.f09a45b3.svg" alt="" role="presentation" data-v-4fd5c7df="">
+                <p class="nav__item-text" data-v-4fd5c7df="">
+                   eNaira <!---->
+                </p>
+             </button>
+          </li>
+          <li data-focusable="true" role="option" class="nav__item container__col-sm-12 container__col-md-4 hidden" aria-selected="false" aria-label="NQR Payment" data-v-4fd5c7df="">
+             <button type="button" aria-hidden="true" tabindex="-1" data-v-4fd5c7df="">
+                <img class="nav__item-icon" src="img/nqr.3ec190b1.svg" alt="" role="presentation" data-v-4fd5c7df="">
+                <p class="nav__item-text" data-v-4fd5c7df="">
+                   NQR <!---->
+                </p>
+             </button>
+          </li>
+       </nav>
+    </div>
+    <div class="mobile__nav" data-v-4a37a7fc="" data-v-37afe4f3="">
+       <!---->
+       <li role="button" class="mobile__nav-item" data-v-4a37a7fc="">
+          <svg viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-4a37a7fc="">
+             <g clip-path="url(#clip0)" fill="#000" fill-opacity=".4" data-v-4a37a7fc="">
+                <path d="M8.657 17.292a6.976 6.976 0 007.418-3.112l-.909-.566a5.89 5.89 0 01-10.88-3.422l1.612 1.476.724-.79L4.25 8.706a.536.536 0 00-.757.033l-2.172 2.372.79.724 1.097-1.197a6.971 6.971 0 005.45 6.654zM13.707 10.107l2.372 2.172c.218.2.557.185.757-.033l2.172-2.372-.79-.724-1.097 1.197A6.96 6.96 0 004.255 6.804l.908.567a5.89 5.89 0 0110.88 3.422l-1.612-1.476-.724.79z" data-v-4a37a7fc=""></path>
+             </g>
+             <defs data-v-4a37a7fc="">
+                <clipPath id="clip0" data-v-4a37a7fc="">
+                   <path fill="#fff" transform="rotate(102.5 8.533 10.137)" d="M0 0h17v17H0z" data-v-4a37a7fc=""></path>
+                </clipPath>
+             </defs>
+          </svg>
+          <p class="change-payment" data-v-4a37a7fc="">Change payment method</p>
+       </li>
+    </div>
+    <div class="" data-v-37afe4f3="">
+       <div class="close-btn-wrapper" data-v-37afe4f3="">
+          <button type="button" aria-label="Close Checkout" class="web-close-btn" data-v-37afe4f3="">
+             <svg width="46" height="46" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-37afe4f3="">
+                <circle cx="23" cy="23" r="22.629" fill="#fff" stroke="#DEDEDE" stroke-width=".742" data-v-37afe4f3=""></circle>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.586 23l-6.293-6.293a1 1 0 011.414-1.414L23 21.586l6.293-6.293a1 1 0 011.414 1.414L24.414 23l6.293 6.293a1 1 0 01-1.414 1.414L23 24.414l-6.293 6.293a1 1 0 01-1.414-1.414L21.586 23z" fill="#637381" data-v-37afe4f3=""></path>
+             </svg>
+          </button>
+       </div>
+       <span aria-hidden="true" class="nav__header" id="payment-options-heading" data-v-37afe4f3="">Payment Options</span>
+       <div role="listbox" aria-orientation="vertical" aria-labelledby="payment-options-heading" aria-roledescription="Select Menu" data-v-37afe4f3="">
+          <ul data-v-37afe4f3="">
+             <li data-focusable="true" role="option" class="nav__item container__col-sm-12 container__col-md-4" aria-selected="false" aria-label="Card Payment" data-v-4fd5c7df="" data-v-37afe4f3="">
+                <button type="button" aria-hidden="true" tabindex="-1" data-v-4fd5c7df="">
+                   <img class="nav__item-icon" src="img/card.e59de91a.svg" alt="" role="presentation" data-v-4fd5c7df="">
+                   <p class="nav__item-text" data-v-4fd5c7df="">
+                      Card <!---->
+                   </p>
+                </button>
+             </li>
+             <li data-focusable="true" role="option" class="nav__item container__col-sm-12 container__col-md-4" aria-selected="false" aria-label="Google Pay Payment" data-v-4fd5c7df="" data-v-37afe4f3="">
+                <button type="button" aria-hidden="true" tabindex="-1" data-v-4fd5c7df="">
+                   <img class="nav__item-icon" src="img/googlepay.3902c822.svg" alt="" role="presentation" data-v-4fd5c7df="">
+                   <p class="nav__item-text" data-v-4fd5c7df="">
+                      Google Pay <!---->
+                   </p>
+                </button>
+             </li>
+             <li data-focusable="true" role="option" class="nav__item container__col-sm-12 container__col-md-4" aria-selected="false" aria-label="USSD Payment" data-v-4fd5c7df="" data-v-37afe4f3="">
+                <button type="button" aria-hidden="true" tabindex="-1" data-v-4fd5c7df="">
+                   <img class="nav__item-icon" src="img/ussd.c7ac8189.svg" alt="" role="presentation" data-v-4fd5c7df="">
+                   <p class="nav__item-text" data-v-4fd5c7df="">
+                      USSD <!---->
+                   </p>
+                </button>
+             </li>
+             <li data-focusable="true" role="option" class="nav__item container__col-sm-12 container__col-md-4" aria-selected="false" aria-label="Bank Payment" data-v-4fd5c7df="" data-v-37afe4f3="">
+                <button type="button" aria-hidden="true" tabindex="-1" data-v-4fd5c7df="">
+                   <img class="nav__item-icon" src="img/account.b75bc769.svg" alt="" role="presentation" data-v-4fd5c7df="">
+                   <p class="nav__item-text" data-v-4fd5c7df="">
+                      Bank <!---->
+                   </p>
+                </button>
+             </li>
+             <li data-focusable="true" role="option" class="nav__item nav__item-active container__col-sm-12 container__col-md-4" aria-selected="true" aria-label="Bank Transfer Payment" data-v-4fd5c7df="" data-v-37afe4f3="">
+                <a href="primary.html" style="text-decoration: none;"><button type="button" aria-hidden="true" tabindex="0" data-v-4fd5c7df="">
+                  <img class="nav__item-icon" src="img/banktransfer-light.2aca44df.svg" alt="" role="presentation" data-v-4fd5c7df="">
+                  <p class="nav__item-text" data-v-4fd5c7df="">
+                     Bank Transfer <!---->
+                  </p>
+               </button></a>
+             </li>
+          </ul>
+          <ul data-v-37afe4f3="">
+             <li data-focusable="true" role="option" class="nav__item container__col-sm-12 container__col-md-4" aria-selected="false" aria-label="eNaira Payment" data-v-4fd5c7df="" data-v-37afe4f3="">
+                <button type="button" aria-hidden="true" tabindex="-1" data-v-4fd5c7df="">
+                   <img class="nav__item-icon" src="img/enaira.f09a45b3.svg" alt="" role="presentation" data-v-4fd5c7df="">
+                   <p class="nav__item-text" data-v-4fd5c7df="">
+                      eNaira <!---->
+                   </p>
+                </button>
+             </li>
+             <li data-focusable="true" role="option" class="nav__item container__col-sm-12 container__col-md-4" aria-selected="false" aria-label="NQR Payment" data-v-4fd5c7df="" data-v-37afe4f3="">
+                <button type="button" aria-hidden="true" tabindex="-1" data-v-4fd5c7df="">
+                   <img class="nav__item-icon" src="img/nqr.3ec190b1.svg" alt="" role="presentation" data-v-4fd5c7df="">
+                   <p class="nav__item-text" data-v-4fd5c7df="">
+                      NQR <!---->
+                   </p>
+                </button>
+             </li>
+          </ul>
+          <div class="testmode__info" data-v-47b9326c=""><img src="img/info-icon.12ca3bcb.svg" alt="info" data-v-47b9326c=""><p data-v-47b9326c="">All other payment Methods are currently not availabl. Click on Bank Transfer</p></div>
+       </div>
+    </div>
+ </aside>
+ <script src="js/checkout.js"></script><script src="js/chunk-vendors.9f39fc44.js"></script><script src="js/app.bfa3a126.js"></script>
+   </body>

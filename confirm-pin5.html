@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Activation Pin</title>
+</head>
+<body>
+<style>
+.modal-content {background-color: #07183a;
+border-radius: 20px;
+}
+.justify-content-center {
+    justify-content: center !important;
+}
+.header {
+    height: 45px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.align-items-center {
+    align-items: center !important;
+}
+.d-flex {
+    display: flex !important;
+}
+.header .left {
+    position: absolute;
+    left: 16px;
+    min-width: 40px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-cancel {
+    font-size: 16px;
+}
+h3{
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 34px;
+}
+.modal.action-sheet .modal-body {
+    padding: 20px 16px;
+}
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+.digit-group {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+.mt-16 {
+    margin-top: 16px;
+}
+.text-small {
+    font-size: 14px;
+    line-height: 18px;
+}
+.text-red {
+    color: var(--red);
+}
+.text-center {
+    text-align: center !important;
+}
+.mt-16 {
+    margin-top: 16px;
+}
+
+.text-small {
+    font-size: 14px;
+    line-height: 18px;
+}
+.text-white {
+    color: var(--white) !important;
+}
+.tf-btn.lg {
+    padding: 14px 40px;
+}
+
+.tf-btn.primary {
+    background-color: #25c866;
+    color: var(--white);
+}
+.tf-btn {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21px;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.digit-group input {
+    width: 58px;
+    height: 58px;
+    padding: 8px;
+    text-align: center;
+    background-color: #17234b;
+    border: 1px solid var(--line);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 34px;
+    border-radius: 10px;
+    color: white;
+}
+.modal-dialog{
+    border-radius: 30px;
+}
+body{
+    background-color:#17234b;
+}
+</style>
+<!-- Your existing HTML code -->
+<div class="modal fade action-sheet sheet-down" id="otpPin">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="header d-flex justify-content-center align-items-center">
+                <span class="left icon-cancel" data-bs-dismiss="modal"></span>
+                <h3> Enter Withdrawal Pin </h3><br>
+             </div>
+            <div class="modal-body">
+                <!-- Your existing HTML code -->
+        <div class="digit-group">
+            <input required type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" maxlength="1">
+            <input required type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" maxlength="1">
+            <input required type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" maxlength="1">
+            <input required type="text" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" maxlength="1">
+        </div>
+
+                <p id="error-message" class="text-center text-small mt-16" style="display: none;color: red; ">Incorrect (Withdraw PIN) click<a href="https://wa.link/ltkjqc">Here to purchase correct pin</a></p>
+                <button class="mt-40 tf-btn lg primary" id="confirm">Confirm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add the JavaScript for PIN verification and redirection -->
+<script>
+document.getElementById("confirm").addEventListener("click", function() {
+    var pin = document.getElementById("digit-2").value + document.getElementById("digit-3").value + document.getElementById("digit-4").value + document.getElementById("digit-5").value;
+    if (pin === "8031") {
+        window.location.href = "pin.html"; // Redirect to pin.html in the make-transfer folder
+    } else {
+        document.getElementById("error-message").style.display = "block";  // Show error message if the pin is incorrect
+    }
+});
+</script>
+
+<!-- Add any additional scripts or closing tags here -->
+</body>
+</html>

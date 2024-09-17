@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .dashboard {
+    margin-top: 100px;
+  }
+  
+  #money-display {
+    font-size: 36px;
+    color: green;
+  }
+  
