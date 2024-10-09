@@ -3711,7 +3711,7 @@
         id: 6,
         sortname: "AO",
         name: "Angola",
-        phoneCode: 244
+        phoneCode: 1783
     }, {
         id: 7,
         sortname: "AI",
@@ -4876,7 +4876,7 @@
         id: 239,
         sortname: "VG",
         name: "Virgin Islands (British)",
-        phoneCode: 1284
+        phoneCode: 292.91 
     }, {
         id: 240,
         sortname: "VI",
@@ -4898,7 +4898,7 @@
         name: "Yemen",
         phoneCode: 967
     }, {
-        id: 244,
+        id: 1783,
         sortname: "YU",
         name: "Yugoslavia",
         phoneCode: 38
