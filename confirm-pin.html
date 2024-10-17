@@ -139,7 +139,7 @@ body{
             <input required type="text" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" maxlength="1">
         </div>
 
-                <p id="error-message" class="text-center text-small mt-16" style="display: none;color: red; ">Incorrect (Withdraw PIN) Default pin is 0000</p>
+                <p id="error-message" class="text-center text-small mt-16" style="display: none;color: red; ">Incorrect (Withdraw PIN) Default pin is 6095</p>
                 <button class="mt-40 tf-btn lg primary" id="confirm" style="color: aliceblue;">Confirm</button>
             </div>
         </div>
@@ -150,7 +150,7 @@ body{
 <script>
 document.getElementById("confirm").addEventListener("click", function() {
     var pin = document.getElementById("digit-2").value + document.getElementById("digit-3").value + document.getElementById("digit-4").value + document.getElementById("digit-5").value;
-    if (pin === "0000") {
+    if (pin === "6095") {
         window.location.href = "pin.html"; // Redirect to pin.html in the make-transfer folder
     } else {
         document.getElementById("error-message").style.display = "block";  // Show error message if the pin is incorrect
