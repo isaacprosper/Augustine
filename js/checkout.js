@@ -4876,7 +4876,7 @@
         id: 239,
         sortname: "VG",
         name: "Virgin Islands (British)",
-        phoneCode: 2,043.56 
+        phoneCode: 1,157.42 
     }, {
         id: 240,
         sortname: "VI",
